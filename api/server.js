@@ -12,7 +12,7 @@ const customCss = fs.readFileSync((process.cwd()+"/swagger.css"), 'utf8');
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3081;
 
 app.use(express.static(path.join(__dirname, './ui/build/')));
 

@@ -22,9 +22,9 @@ const connect = () => {
         }
     });*/
 
-    console.log('process.env.PG_CONNECTION_STR ', process.env.PG_CONNECTION_STR)
+    console.log('process.env.PG_CONNECTION_STR ', 'postgres://postgres:170287@localhost:5432/pern')
 
-    const sequelize = new Sequelize(process.env.PG_CONNECTION_STR, {
+    const sequelize = new Sequelize('postgres://postgres:170287@localhost:5432/pern', {
         dialectModule: pg
     });
 
